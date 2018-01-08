@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <cmath>
 //#include "<path_to>\I2c_dev_interface.h"
-#include "C:\Users\dvyen\source\repos\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface.h"
+#include "../../../I2c_dev_interface/I2c_dev_interface/I2c_dev_interface/I2c_dev_interface.h"
 
 #define PCA9685_REG_MODE1			0x00
 #define PCA9685_REG_MODE2			0x01
