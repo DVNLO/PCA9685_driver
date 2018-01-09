@@ -60,11 +60,18 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <SourcesToCopyRemotelyOverride>@(SourcesToCopyRemotely);@(DataFilesToCopyRemotely)</SourcesToCopyRemotelyOverride>
+    <AdditionalSourcesToCopyMapping>C:\Users\dvyen\source\repos\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface.h;C:\Users\dvyen\source\repos\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface.cpp;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" />
   <ItemGroup>
+    <ClCompile Include="..\..\..\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PCA9685_driver.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface\I2c_dev_interface.h" />
     <ClInclude Include="PCA9685_driver.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
